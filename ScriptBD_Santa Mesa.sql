@@ -33,7 +33,7 @@ nombre_producto CHAR(30),
 idioma CHAR(10),
 edad_player int,
 descripcion CHAR(50),
-imagen VARBINARY(MAX),
+imagen CHAR(200),
 estado bit)
 
 GO
