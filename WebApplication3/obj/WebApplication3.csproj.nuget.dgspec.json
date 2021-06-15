@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fernando\\Documents\\GitHub\\Santa-Mesa\\WebApplication3\\WebApplication3.csproj": {}
+    "D:\\ingenieria web\\catalogo\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fernando\\Documents\\GitHub\\Santa-Mesa\\WebApplication3\\WebApplication3.csproj": {
+    "D:\\ingenieria web\\catalogo\\WebApplication3\\WebApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fernando\\Documents\\GitHub\\Santa-Mesa\\WebApplication3\\WebApplication3.csproj",
+        "projectUniqueName": "D:\\ingenieria web\\catalogo\\WebApplication3\\WebApplication3.csproj",
         "projectName": "WebApplication3",
-        "projectPath": "C:\\Users\\Fernando\\Documents\\GitHub\\Santa-Mesa\\WebApplication3\\WebApplication3.csproj",
-        "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fernando\\Documents\\GitHub\\Santa-Mesa\\WebApplication3\\obj\\",
+        "projectPath": "D:\\ingenieria web\\catalogo\\WebApplication3\\WebApplication3.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\ingenieria web\\catalogo\\WebApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
