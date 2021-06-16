@@ -1,0 +1,50 @@
+﻿@model SantaMesa.Models.Pedidos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pedidos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.montoTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.montoTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clientes.nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clientes.nombres)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_Pedido }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
