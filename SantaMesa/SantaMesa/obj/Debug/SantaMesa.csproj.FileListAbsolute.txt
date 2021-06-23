@@ -178,3 +178,44 @@ C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\Sant
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.CopyComplete
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.dll
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.pdb
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\SantaMesa.dll.config
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\SantaMesa.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\SantaMesa.pdb
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Antlr3.Runtime.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\EntityFramework.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\EntityFramework.SqlServer.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Microsoft.Web.Infrastructure.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Newtonsoft.Json.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Helpers.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Mvc.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Optimization.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Razor.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.Deployment.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.Razor.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\WebGrease.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\EntityFramework.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\EntityFramework.SqlServer.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Helpers.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Mvc.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Optimization.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.Razor.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.Deployment.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\System.Web.WebPages.Razor.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Newtonsoft.Json.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Antlr3.Runtime.pdb
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.Helpers.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.Mvc.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.Optimization.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.Razor.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csprojAssemblyReference.cache
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.CoreCompileInputs.cache
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.CopyComplete
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.dll
+D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.pdb
