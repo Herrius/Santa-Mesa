@@ -1,0 +1,39 @@
+﻿.form-control,.center-block{
+    display:inline-block;
+}
+body {
+    padding: 0;
+    background: #FFFFFF;
+}
+.menu{
+    font-size:1.5em;
+    padding:1.25rem 2rem;
+    color:black;
+}
+.container {
+    padding: 1rem;
+
+}
+.fondo {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.chess { 
+    background-image:url('img/chess.png');
+    background-size:100%;
+    padding:1.5rem;
+}
+.chess_text{
+    color:white;
+}
+.chess_text:hover {
+    color: white;
+}
+chess_input{
+    display:inline-block;
+}
+.btn_chess {
+    display:inline-block;
+    color: white;
+    background-color: black;
+}

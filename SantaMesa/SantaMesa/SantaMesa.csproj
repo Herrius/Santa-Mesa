@@ -206,6 +206,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="styles\img\catalogo.png" />
+    <Content Include="styles\img\chess.png" />
+    <Content Include="styles\img\santamesa.png" />
+    <Content Include="styles\index.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -236,6 +240,7 @@
     <Content Include="Views\Pedidos\Edit.cshtml" />
     <Content Include="Views\Pedidos\Index.cshtml" />
     <Content Include="Views\Clientes\Login.cshtml" />
+    <Content Include="Views\Home\Catalogo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

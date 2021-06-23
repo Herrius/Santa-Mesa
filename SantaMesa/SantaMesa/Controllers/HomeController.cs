@@ -26,5 +26,11 @@ namespace SantaMesa.Controllers
 
             return View();
         }
+        public ActionResult Catalogo()
+        {
+            ViewBag.Message = "Your catalogo page.";
+
+            return View();
+        }
     }
 }
