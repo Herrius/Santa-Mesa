@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" href="~/styles/index.css"/>
+    <link rel="stylesheet" href="~/styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="navbar fondo">
@@ -31,15 +32,62 @@
         @RenderBody()
 
     </div>
-    <footer class="chess text-center">
-        <div>
+    <footer>
+        <div class="chess text-center">
             <h3 class="chess_text">Registrate Y Enterate De Nuestras Promociones</h3>
             <div>
                 <input type="type" name="name" value="" class="form-control center-block" />
                 <button class="btn btn_chess chess_input">Enviar</button>
             </div>
         </div>
+        <div class="container">
+           
+            
+            
+
+        </div>
+
     </footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Santa Mesa</h5>
+                <ul class="footer-links">
+                    <li><img class="footer_icon"src="~/styles/img/gps icon.png"/><a href="https://cutt.ly/Lmq8TUw">Ca. Real 475, Huancayo 12001</a></li>
+                    <li><img class="footer_icon"src="~/styles/img/phone icon.png" /><a href="tel:+51977115116"> 977-115-116 </a></li>
+                    <li><img class="footer_icon"src="~/styles/img/email icon.png" /><a href="mailto:santamesahyo@gmail.com">santamesahyo@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Menu</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Envios</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Mi cuenta</h5>
+                <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/category/c-language/">Mi cuenta</a></li>
+                    <li><a href="http://scanfcode.com/category/front-end-development/">Historial de pedidos</a></li>
+                    <li><a href="http://scanfcode.com/category/back-end-development/">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Categories</h5>
+                <ul class="footer-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </ul>
+            </div>
+          
+
+        </div>
+    </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

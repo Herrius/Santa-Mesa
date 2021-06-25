@@ -208,6 +208,9 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="styles\img\catalogo.png" />
     <Content Include="styles\img\chess.png" />
+    <Content Include="styles\img\email icon.png" />
+    <Content Include="styles\img\gps icon.png" />
+    <Content Include="styles\img\phone icon.png" />
     <Content Include="styles\img\santamesa.png" />
     <Content Include="styles\index.css" />
     <Content Include="Web.config" />
