@@ -2,8 +2,114 @@
 @{
     ViewBag.Title = "Login";
 }
+<style>
+    .login-container {
+        margin: 0;
+        padding-inline: 0;
+        background: url("../../styles/img/background_login.jpg") no-repeat center top;
+        background-size: cover;
+        font-family: sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-<h2>Iniciar sesión</h2>
+    .login-box {
+        width: 320px;
+        height: 420px;
+        background-color: #F2E8B3;
+        color:#000;
+        top: 30%;
+        transform: translate(-50,-50);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        border-radius:10px;
+    }
+    .login-box .userIcon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+        .login-box h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .login-box label {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            display: block;
+        }
+
+        .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+            .login-box input[type="text"], .login-box input[type="password"] {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: black;
+                font-size: 16px;
+            }
+
+            .login-box input[type="submit"] {
+                border: none;
+                outline: none;
+                height: 40px;
+                background-color: #FF665A;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+
+ .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #7D6B7D;
+    color: white;
+ }
+
+.login-box a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: darkgrey;
+    align-content:center;
+}
+
+.login-box a:hover {
+ color: #7D6B7D;}
+
+</style>
+
+<div class="login-container">
+    <div class="login-box">
+        <img class="userIcon" src="~/styles/img/user_icon.png" alt="Alternate Text" />
+        <h1>Inicia sesión</h1>
+        <form action="/" method="post">
+            <label for="username">Correo</label>
+            <input type="text" name="username" placeholder="Ingrese su correo" />
+
+            <label for="password">Username</label>
+            <input type="password" name="username" placeholder="Ingrese su usuario" />
+
+            <input type="submit" value="Ingresar" />
+            <a href="#">¿Olvidó su clave?</a>
+            <br />
+            <a href="#">Quiero registrarme</a>
+
+        </form>
+    </div>
+</div>
 
 
 

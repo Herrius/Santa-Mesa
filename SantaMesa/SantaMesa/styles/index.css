@@ -69,3 +69,8 @@ chess_input{
     background: #bb0000;
     color: white;
 }
+
+.loginBox {
+    background-color:red;
+
+}
