@@ -53,8 +53,9 @@ namespace SantaMesa.Controllers
         public ActionResult Create([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado")] Clientes clientes)
         {
             if (ModelState.IsValid)
-            {
+            {                
                 db.Clientes.Add(clientes);
+                clientes.estado = true;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
