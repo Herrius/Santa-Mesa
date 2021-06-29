@@ -8,6 +8,8 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="~/styles/index.css" />
+
+    <link href="~/styles/login.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
                     <li class="menu">@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li class="menu">@Html.ActionLink("Catalogo", "Catalogo", "Home")</li>
                     <li class="menu">@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li class="menu">@Html.ActionLink("Login", "Contact", "Home")</li>
+                    <li class="menu">@Html.ActionLink("Login", "Login", "Clientes")</li>
                 </ul>
             </div>
         </div>

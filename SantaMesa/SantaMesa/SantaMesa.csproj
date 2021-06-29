@@ -206,13 +206,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="styles\img\background_login.jpg" />
     <Content Include="styles\img\catalogo.png" />
     <Content Include="styles\img\chess.png" />
     <Content Include="styles\img\email icon.png" />
     <Content Include="styles\img\gps icon.png" />
+    <Content Include="styles\img\user_icon.png" />
     <Content Include="styles\img\phone icon.png" />
     <Content Include="styles\img\santamesa.png" />
     <Content Include="styles\index.css" />
+    <Content Include="styles\login.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

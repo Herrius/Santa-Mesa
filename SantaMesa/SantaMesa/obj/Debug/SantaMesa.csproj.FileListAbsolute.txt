@@ -173,7 +173,6 @@ C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.AssemblyReference.cache
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.CopyComplete
 C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.dll

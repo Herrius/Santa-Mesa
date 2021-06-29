@@ -69,10 +69,8 @@ chess_input{
     background: #bb0000;
     color: white;
 }
-.btn-santamesa {
-    width: 100%;
-}
 
-.categories{
-    margin-top:10px;
+.loginBox {
+    background-color:red;
+
 }
