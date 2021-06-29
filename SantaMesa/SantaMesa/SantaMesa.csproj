@@ -213,6 +213,7 @@
     <Content Include="styles\img\email icon.png" />
     <Content Include="styles\img\gps icon.png" />
     <Content Include="styles\img\index\abstractosCat.jpg" />
+    <Content Include="styles\img\index\contactIMG.jpg" />
     <Content Include="styles\img\index\cooperativosCat.jpg" />
     <Content Include="styles\img\index\familiaresCat.jpg" />
     <Content Include="styles\img\index\infantilCat.jpg" />

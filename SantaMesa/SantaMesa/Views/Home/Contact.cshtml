@@ -1,17 +1,86 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<style>
+    .formContainer {
+        margin-top:20px; 
+    }
+    .portada {
+        width:100%;
+        height:250px;
+    }
+    .form {
+        display:flex;
+        flex-direction:column;
+        justify-items:center;
+    }
+    .granGroup {
+        display: flex;
+        flex-direction: row;
+        justify-items:center;
+        justify-content:center;
+    }
+    .group {
+        margin-left:15px;
+        margin-right:40px;
+        width:50%;
+        display:flex;
+        flex-direction:column;
+    }
+    
+    input[type=text] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    .btnSubmit {
+        width: 200px;
+        height: 50px;
+        color:white;
+        margin-top:5%;
+        margin-left:40%;
+        background-color:#0E4AA0;
+    }
+
+</style>
+
+<img class="portada" src="~/styles/img/index/contactIMG.jpg" alt="Alternate Text" />
+
+<div class="formContainer">
+    <form class="form" action="/" method="post">
+        <div class="granGroup">
+            <div class="group">
+                <label for=" nombres">Nombre</label>
+                <input type="text" name="nombres" value="" />
+
+                <label for=" apellidos">Apellidos</label>
+                <input type="text" name="apellidos" value="" />
+
+                <label for=" nombreEmpresa">Empresa</label>
+                <input type="text" name="nombreEmpresa" value="" />
+
+                <label for="ruc">RUC</label>
+                <input type="text" name="ruc" value="" />
+
+                <label for="email">Email</label>
+                <input type="text" name="email" value="" />
+            </div>
+
+            <div class="group">
+                <label for="celular">Celular</label>
+                <input type="text" name="celular" value="" />
+
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" value="" />
+
+                <label for="mensaje">Mensaje</label>
+                <input type="text" name="mensaje" value="" />
+            </div>
+        </div>
+        <input class="btnSubmit" type="submit" name="enviar" placeholder="Enviar" />
+
+    </form>
+</div>
