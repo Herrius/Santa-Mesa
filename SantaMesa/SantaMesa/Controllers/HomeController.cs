@@ -38,5 +38,12 @@ namespace SantaMesa.Controllers
 
             return View();
         }
+        
+        public ActionResult Whislist()
+        {
+            ViewBag.Message = "Your catalogo page.";
+
+            return View();
+        }
     }
 }

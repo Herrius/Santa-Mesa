@@ -74,6 +74,12 @@ chess_input{
     background-color:red;
 
 }
-.banner-img {
+.banner-img{
     width: 100%;
+}
+.input-reset{
+   max-width:none;
+}
+.chess_img{
+    width:100%;
 }

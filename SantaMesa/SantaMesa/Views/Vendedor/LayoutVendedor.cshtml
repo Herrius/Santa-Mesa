@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("head", required: false)
+    <link rel="stylesheet" href="~/styles/index.css" />
+
+    <link href="~/styles/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar fondo">
+
+        <div class="container">
+
+            <div class="nav navbar-nav">
+                <img src="~/styles/img/santamesa.png" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="menu">@Html.ActionLink("Inicio", "Index", "Vendedor")</li>
+                    <li class="menu">@Html.ActionLink("Catalogo", "Catalogo", "Vendedor")</li>
+                    <li class="menu">@Html.ActionLink("Contacto", "Contact", "Vendedor")</li>
+                    <li class="menu">@Html.ActionLink("Login", "Login", "Clientes")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+
+    <footer>
+        <div>
+            <img src="~/styles/img/chess.png" class="chess_img" alt="Alternate Text" />    
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
