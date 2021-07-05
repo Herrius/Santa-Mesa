@@ -16,13 +16,14 @@ GO
 
 CREATE TABLE Clientes(
 id_Cliente int IDENTITY PRIMARY KEY,
-nombres CHAR(30),
+nombres VARCHAR(30),
 telefono CHAR(11),
-email CHAR(30),
-direccion CHAR(50),
+email VARCHAR(40) UNIQUE,
+direccion VARCHAR(50),
 dni CHAR(8),
-ciudad CHAR(25),
-estado bit)
+ciudad VARCHAR(25),
+estado bit,
+clave VARCHAR(16))
 
 GO
 
