@@ -1,0 +1,143 @@
+﻿@model SantaMesa.Models.Clientes
+
+@{
+    ViewBag.Title = "Cuenta";
+}
+
+<style>
+
+    .menuCuenta {
+        display:flex;
+    }
+    .menuCuenta p {
+        margin-right:2rem;
+        cursor: pointer;
+    }
+    .content{
+        margin-top:2rem;
+    }
+    [data-content] {
+        display:none;
+    }
+    .active[data-content] {
+        display:block;
+    }
+    .box {
+        display:flex;
+    }
+    .sub_box > div {
+        font-size:15px;
+        margin:2rem;
+
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        margin-left: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .menuCuenta > p {
+        font-size:20px;
+        margin-left:10px;
+        margin-right:10px;
+        padding:10px;
+        font-style:normal;
+        border-radius:10px;
+    }
+</style>
+
+
+
+<h2>Mi cuenta</h2>
+
+<div class="menuCuenta">
+    <p data-target="#igeneral">Información general</p>
+    <p data-target="#address">Dirección</p>
+    <p data-target="#wishlist">Whishlist</p>
+    <p data-target="#security">Contraseña y seguridad</p>
+</div>
+
+<div class="content">
+    <div data-content id="igeneral" class="active">
+        <div>
+            <form class="form-group" action="ActualizarDatos" method="post">
+                <div class="box">
+                    <div class="sub_box">
+                        <div>
+                            <label for="name">Nombres</label><br />
+                            <input type="text" name="name" value="@Html.DisplayFor(model => model.nombres)" />
+                        </div>
+                        <div>
+                            <label for="name">Telefono</label><br />
+                            <input type="text" name="telefono" value="@Html.DisplayFor(model => model.telefono)" />
+                        </div>
+                        <div>
+                            <label for="name">Email</label><br />
+                            <input type="text" name="email" value="@Html.DisplayFor(model => model.email)" />
+                        </div>
+                    </div>
+                    <div class="sub_box">
+                        <div>
+                            <label for="name">Dirección</label><br />
+                            <input type="text" name="direccion" value="@Html.DisplayFor(model => model.direccion)" />
+                        </div>
+                        <div>
+                            <label for="name">DNI</label><br />
+                            <input type="text" name="dni" value="@Html.DisplayFor(model => model.dni)" />
+                        </div>
+                        <div>
+                            <label for="name">Ciudad</label><br />
+                            <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.ciudad)" />
+                        </div>
+
+                    </div>
+                </div>
+               
+                <input type="submit" name="update" value="Actualizar"/>
+
+            </form>
+            
+        </div>
+    </div>
+    <div data-content id="address">
+        <p>Dirección</p>
+    </div>
+    <div data-content id="wishlist">
+        <p>deseos</p>
+    </div>
+    <div data-content id="security">
+        <p>password</p>
+    </div>
+
+</div>
+
+
+<script defer>
+    const targets = document.querySelectorAll('[data-target]')
+    const content = document.querySelectorAll('[data-content]')
+    targets.forEach(target => {
+
+        target.addEventListener('click', () => {
+
+            content.forEach(c => {
+                c.classList.remove('active')
+            })
+            const t = document.querySelector(target.dataset.target)
+            t.classList.add('active')
+        });
+    })
+</script>

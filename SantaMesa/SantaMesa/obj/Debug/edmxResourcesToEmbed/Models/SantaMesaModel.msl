@@ -17,6 +17,7 @@
     <EntitySetMapping Name="Clientes">
       <EntityTypeMapping TypeName="BD_SantaMesaModel.Clientes">
         <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="clave" ColumnName="clave" />
           <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
           <ScalarProperty Name="nombres" ColumnName="nombres" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
