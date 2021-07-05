@@ -156,11 +156,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SantaMesaModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SantaMesaModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SantaMesaModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\SantaMesaModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

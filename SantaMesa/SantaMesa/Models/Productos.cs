@@ -26,22 +26,12 @@ namespace SantaMesa.Models
         public Nullable<int> edad_player { get; set; }
         public string descripcion { get; set; }
         public string imagen { get; set; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
         public Nullable<bool> estado { get; set; }
         public Nullable<double> precio { get; set; }
     
-=======
-=======
->>>>>>> Stashed changes
-
-        public float precio { get; set; }
 
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallePedidos> DetallePedidos { get; set; }
     }
