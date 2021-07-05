@@ -15,7 +15,7 @@ namespace SantaMesa.Controllers
         private BD_SantaMesaEntities db = new BD_SantaMesaEntities();
 
         // GET: Productos
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
             return View(db.Productos.ToList());
         }

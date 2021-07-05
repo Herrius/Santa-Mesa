@@ -8,34 +8,39 @@
     <div class="row">
         <div class="row">
             <div class="col-md-10 ">
-                <h3>Relevancia</h3>
+                <h3>Producto</h3>
             </div>
             <div class="col-md-2 categories">
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Dropdown
+                        Categorias
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="https://localhost:44355/Home/Catalogo?id=1">Mayor precio a menor preceio</a></li>
+                        <li><a href="https://localhost:44355/Home/Catalogo?id=0">Menor precio a mayor precio</a></li>
+                        <li><a href="https://localhost:44355/Home/Catalogo?id=2">Menor edad a mayor edad</a></li>
+                        
                     </ul>
                 </div>
             </div>
 
         </div>
 
-        @foreach (var item in Model) {
-            <p></p>
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-3 tex">
                 <div class="thumbnail">
                     <img src="@Html.DisplayFor(modelItem => item.imagen)" alt="...">
                     <div class="caption">
-                        <h3>@Html.DisplayFor(modelItem => item.nombre_producto)</h3>
+                        <h4 class="text-center">
+                            @{
+                                string temp = item.nombre_producto;
+
+                                temp = temp.Substring(0, 18);
+                                @temp
+                            }
+                        </h4>
                         <div class="row">
                             <div class="col-md-8">
 
@@ -47,227 +52,18 @@
                                 <span class="glyphicon glyphicon-heart"></span>
                             </div>
                         </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
+                        <div class="text-center">
+                            <a href="https://localhost:44355/Home/ProductoDetalle?id=@Html.DisplayFor(Model=>item.id_Producto)" class="btn btn-primary btn-santamesa" role="button">Agregar al carrito</a>
                         </div>
 
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         }
 
-        @*<div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
 
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="..." alt="...">
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Lorem ipsum</p>
-                            </div>
-                            <div class="col-md-4">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                                <span class="glyphicon glyphicon-heart"></span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
-                    </div>
-                </div>
-            </div>
-        </div>*@
     </div>
+    
 </div>
+
