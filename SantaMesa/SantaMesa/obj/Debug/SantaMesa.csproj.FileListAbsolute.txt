@@ -267,3 +267,4 @@ D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\roslyn\vbc.exe.config
 D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\roslyn\vbc.rsp
 D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\roslyn\VBCSCompiler.exe
 D:\ingenieria web\Santa-Mesa\SantaMesa\SantaMesa\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Fernando\Documents\GitHub\Santa-Mesa\SantaMesa\SantaMesa\obj\Debug\SantaMesa.csproj.AssemblyReference.cache

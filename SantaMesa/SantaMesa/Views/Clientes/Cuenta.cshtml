@@ -103,7 +103,6 @@
                             <label for="name">Ciudad</label><br />
                             <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.ciudad)" />
                         </div>
-
                     </div>
                 </div>
                
@@ -112,15 +111,31 @@
             </form>
             
         </div>
-    </div>
-    <div data-content id="address">
-        <p>Dirección</p>
-    </div>
+    </div>  
     <div data-content id="wishlist">
         <p>deseos</p>
     </div>
     <div data-content id="security">
-        <p>password</p>
+        <p>Contraseña y seguridad</p>
+        <form action="/" method="post">
+
+            <div>
+                <label for="name">Clave antigua</label><br />
+                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+            </div>
+            <div>
+                <label for="name">Clave nueva</label><br />
+                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+            </div>
+            <div>
+                <label for="name">Repetir contraseña nueva</label><br />
+                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+            </div>
+            <div>
+                <label for="name">Clave</label><br />
+                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+            </div>
+        </form>
     </div>
 
 </div>

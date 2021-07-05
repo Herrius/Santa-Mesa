@@ -11,7 +11,7 @@ namespace SantaMesa.Models
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Productos
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,19 +19,16 @@ namespace SantaMesa.Models
         {
             this.DetallePedidos = new HashSet<DetallePedidos>();
         }
-
+    
         public int id_Producto { get; set; }
         public string nombre_producto { get; set; }
         public string idioma { get; set; }
         public Nullable<int> edad_player { get; set; }
         public string descripcion { get; set; }
         public string imagen { get; set; }
-
         public Nullable<bool> estado { get; set; }
         public Nullable<double> precio { get; set; }
     
-
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallePedidos> DetallePedidos { get; set; }
     }
