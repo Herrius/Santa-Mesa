@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SantaMesa.Models;
 
 namespace SantaMesa.Controllers
 {
     public class HomeController : Controller
     {
+        private BD_SantaMesaEntities db = new BD_SantaMesaEntities();
         public ActionResult Index()
         {
             return View();
@@ -30,7 +32,7 @@ namespace SantaMesa.Controllers
         {
             ViewBag.Message = "Your catalogo page.";
 
-            return View();
+            return View(db.Productos.ToList());
         }
         public ActionResult ProductoDetalle()
         {

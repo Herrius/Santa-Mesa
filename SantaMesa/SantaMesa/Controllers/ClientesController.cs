@@ -13,7 +13,7 @@ namespace SantaMesa.Controllers
     public class ClientesController : Controller
     {
         private BD_SantaMesaEntities db = new BD_SantaMesaEntities();
-
+        
         // GET: Clientes
         public ActionResult Index()
         {

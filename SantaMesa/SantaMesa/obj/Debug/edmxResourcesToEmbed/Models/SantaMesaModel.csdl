@@ -58,10 +58,11 @@
     <Property Name="nombre_producto" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
     <Property Name="idioma" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
     <Property Name="edad_player" Type="Int32" />
-    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
-    <Property Name="imagen" Type="String" MaxLength="200" FixedLength="true" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="imagen" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
     <Property Name="estado" Type="Boolean" />
     <NavigationProperty Name="DetallePedidos" Relationship="Self.FK__DetallePe__id_pr__2E1BDC42" FromRole="Productos" ToRole="DetallePedidos" />
+    <Property Name="precio" Type="Double" />
   </EntityType>
   <Association Name="FK__Pedidos__id_Clie__2A4B4B5E">
     <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />

@@ -53,6 +53,7 @@
     <EntitySetMapping Name="Productos">
       <EntityTypeMapping TypeName="BD_SantaMesaModel.Productos">
         <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="precio" ColumnName="precio" />
           <ScalarProperty Name="id_Producto" ColumnName="id_Producto" />
           <ScalarProperty Name="nombre_producto" ColumnName="nombre_producto" />
           <ScalarProperty Name="idioma" ColumnName="idioma" />

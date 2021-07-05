@@ -31,8 +31,8 @@ id_Producto int IDENTITY PRIMARY KEY,
 nombre_producto CHAR(30),
 idioma CHAR(10),
 edad_player int,
-descripcion CHAR(50),
-imagen CHAR(200),
+descripcion text,
+imagen CHAR(500),
 estado bit)
 
 GO

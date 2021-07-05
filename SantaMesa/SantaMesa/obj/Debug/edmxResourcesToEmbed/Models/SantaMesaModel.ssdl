@@ -53,9 +53,10 @@
     <Property Name="nombre_producto" Type="char" MaxLength="30" />
     <Property Name="idioma" Type="char" MaxLength="10" />
     <Property Name="edad_player" Type="int" />
-    <Property Name="descripcion" Type="char" MaxLength="50" />
-    <Property Name="imagen" Type="char" MaxLength="200" />
+    <Property Name="descripcion" Type="text" />
+    <Property Name="imagen" Type="varchar" MaxLength="400" />
     <Property Name="estado" Type="bit" />
+    <Property Name="precio" Type="float" />
   </EntityType>
   <Association Name="FK__DetallePe__id_pe__2D27B809">
     <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="0..1" />
