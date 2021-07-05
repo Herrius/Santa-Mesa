@@ -17,14 +17,15 @@
       <PropertyRef Name="id_Cliente" />
     </Key>
     <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nombres" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="telefono" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
-    <Property Name="email" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
-    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
-    <Property Name="ciudad" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="ciudad" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
     <Property Name="estado" Type="Boolean" />
     <NavigationProperty Name="Pedidos" Relationship="Self.FK__Pedidos__id_Clie__2A4B4B5E" FromRole="Clientes" ToRole="Pedidos" />
+    <Property Name="clave" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="DetallePedidos">
     <Key>

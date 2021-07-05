@@ -28,6 +28,7 @@ namespace SantaMesa.Models
         public string dni { get; set; }
         public string ciudad { get; set; }
         public Nullable<bool> estado { get; set; }
+        public string clave { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedidos> Pedidos { get; set; }

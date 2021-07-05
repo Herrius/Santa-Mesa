@@ -22,13 +22,14 @@
             <PropertyRef Name="id_Cliente" />
           </Key>
           <Property Name="id_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombres" Type="char" MaxLength="30" />
+          <Property Name="nombres" Type="varchar" MaxLength="30" />
           <Property Name="telefono" Type="char" MaxLength="11" />
-          <Property Name="email" Type="char" MaxLength="30" />
-          <Property Name="direccion" Type="char" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="40" />
+          <Property Name="direccion" Type="varchar" MaxLength="50" />
           <Property Name="dni" Type="char" MaxLength="8" />
-          <Property Name="ciudad" Type="char" MaxLength="25" />
+          <Property Name="ciudad" Type="varchar" MaxLength="25" />
           <Property Name="estado" Type="bit" />
+          <Property Name="clave" Type="varchar" MaxLength="16" />
         </EntityType>
         <EntityType Name="DetallePedidos">
           <Key>
@@ -62,7 +63,7 @@
           <Property Name="imagen" Type="char" MaxLength="200" />
           <Property Name="estado" Type="bit" />
         </EntityType>
-        <Association Name="FK__DetallePe__id_pe__2D27B809">
+        <Association Name="FK__DetallePe__id_pe__6FE99F9F">
           <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="0..1" />
           <End Role="DetallePedidos" Type="Self.DetallePedidos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -74,7 +75,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DetallePe__id_pr__2E1BDC42">
+        <Association Name="FK__DetallePe__id_pr__70DDC3D8">
           <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
           <End Role="DetallePedidos" Type="Self.DetallePedidos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -86,7 +87,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Pedidos__id_Clie__2A4B4B5E">
+        <Association Name="FK__Pedidos__id_Clie__6D0D32F4">
           <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
           <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -104,15 +105,15 @@
           <EntitySet Name="DetallePedidos" EntityType="Self.DetallePedidos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Pedidos" EntityType="Self.Pedidos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__DetallePe__id_pe__2D27B809" Association="Self.FK__DetallePe__id_pe__2D27B809">
+          <AssociationSet Name="FK__DetallePe__id_pe__6FE99F9F" Association="Self.FK__DetallePe__id_pe__6FE99F9F">
             <End Role="Pedidos" EntitySet="Pedidos" />
             <End Role="DetallePedidos" EntitySet="DetallePedidos" />
           </AssociationSet>
-          <AssociationSet Name="FK__DetallePe__id_pr__2E1BDC42" Association="Self.FK__DetallePe__id_pr__2E1BDC42">
+          <AssociationSet Name="FK__DetallePe__id_pr__70DDC3D8" Association="Self.FK__DetallePe__id_pr__70DDC3D8">
             <End Role="Productos" EntitySet="Productos" />
             <End Role="DetallePedidos" EntitySet="DetallePedidos" />
           </AssociationSet>
-          <AssociationSet Name="FK__Pedidos__id_Clie__2A4B4B5E" Association="Self.FK__Pedidos__id_Clie__2A4B4B5E">
+          <AssociationSet Name="FK__Pedidos__id_Clie__6D0D32F4" Association="Self.FK__Pedidos__id_Clie__6D0D32F4">
             <End Role="Clientes" EntitySet="Clientes" />
             <End Role="Pedidos" EntitySet="Pedidos" />
           </AssociationSet>
@@ -138,14 +139,15 @@
             <PropertyRef Name="id_Cliente" />
           </Key>
           <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombres" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="nombres" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="telefono" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
-          <Property Name="email" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
-          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
-          <Property Name="ciudad" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Name="ciudad" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="estado" Type="Boolean" />
           <NavigationProperty Name="Pedidos" Relationship="Self.FK__Pedidos__id_Clie__2A4B4B5E" FromRole="Clientes" ToRole="Pedidos" />
+          <Property Name="clave" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="DetallePedidos">
           <Key>
@@ -261,6 +263,7 @@
           <EntitySetMapping Name="Clientes">
             <EntityTypeMapping TypeName="BD_SantaMesaModel.Clientes">
               <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="clave" ColumnName="clave" />
                 <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
                 <ScalarProperty Name="nombres" ColumnName="nombres" />
                 <ScalarProperty Name="telefono" ColumnName="telefono" />

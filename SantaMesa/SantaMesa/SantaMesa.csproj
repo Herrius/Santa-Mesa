@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Clientes1Controller.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PedidosController.cs" />
@@ -258,6 +259,12 @@
     <Content Include="Views\Home\Whislist.cshtml" />
     <Content Include="Views\Vendedor\LayoutVendedor.cshtml" />
     <Content Include="Views\Vendedor\Catalogo.cshtml" />
+    <Content Include="Views\Clientes\Cuenta.cshtml" />
+    <Content Include="Views\Clientes1\Create.cshtml" />
+    <Content Include="Views\Clientes1\Delete.cshtml" />
+    <Content Include="Views\Clientes1\Details.cshtml" />
+    <Content Include="Views\Clientes1\Edit.cshtml" />
+    <Content Include="Views\Clientes1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
