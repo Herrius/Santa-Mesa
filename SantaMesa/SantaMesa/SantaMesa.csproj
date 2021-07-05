@@ -128,7 +128,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\Clientes1Controller.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PedidosController.cs" />
@@ -156,6 +155,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SantaMesaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SantaMesaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SantaMesaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SantaMesaModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -257,11 +261,6 @@
     <Content Include="Views\Vendedor\Banner.cshtml" />
     <Content Include="Views\Vendedor\AgregarProducto.cshtml" />
     <Content Include="Views\Clientes\Cuenta.cshtml" />
-    <Content Include="Views\Clientes1\Create.cshtml" />
-    <Content Include="Views\Clientes1\Delete.cshtml" />
-    <Content Include="Views\Clientes1\Details.cshtml" />
-    <Content Include="Views\Clientes1\Edit.cshtml" />
-    <Content Include="Views\Clientes1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

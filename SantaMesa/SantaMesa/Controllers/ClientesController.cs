@@ -24,33 +24,33 @@ namespace SantaMesa.Controllers
         public ActionResult Login() {
             return View();
         }
-        public ActionResult Cuenta()
+        public ActionResult Cuenta([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes)
         {
-            int id =6;
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Clientes clientes = db.Clientes.Find(id);
-            if (clientes == null)
-            {
-                return HttpNotFound();
-            }
             return View(clientes);
         }
 
         [HttpPost]
-        public ActionResult ActualizarDatos(){
-
+        public ActionResult ActualizarDatos([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes)
+        {
+            if (clientes != null)
+            {
+                clientes.clave = "password";
+                db.SaveChanges();
+                return View("Cuenta",clientes);
+            }
+            else return HttpNotFound();
+            /*
             Clientes clientes=new Clientes();
 
-            clientes.id_Cliente = 1;
+            int id=5;
             clientes.nombres= Request.Form["name"].ToString();
             clientes.telefono= Request.Form["telefono"].ToString();
             clientes.email = Request.Form["email"].ToString();
             clientes.dni = Request.Form["dni"].ToString();
             clientes.direccion = Request.Form["direccion"].ToString();
             clientes.ciudad = Request.Form["ciudad"].ToString();
+            clientes.clave = db.Clientes.Find(id).clave;
+
 
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace SantaMesa.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(clientes);
+            return View("Cuenta");*/
         }
 
         public ActionResult LoginValidador()
