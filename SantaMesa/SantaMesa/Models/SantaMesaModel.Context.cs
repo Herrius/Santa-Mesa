@@ -26,9 +26,9 @@ namespace SantaMesa.Models
         }
     
         public virtual DbSet<Administrador> Administrador { get; set; }
-        public virtual DbSet<Clientes> Clientes { get; set; }
         public virtual DbSet<DetallePedidos> DetallePedidos { get; set; }
         public virtual DbSet<Pedidos> Pedidos { get; set; }
         public virtual DbSet<Productos> Productos { get; set; }
+        public virtual DbSet<Clientes> Clientes { get; set; }
     }
 }

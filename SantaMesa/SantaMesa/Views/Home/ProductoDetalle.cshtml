@@ -28,13 +28,13 @@
         </div>
         <hr />
         <p>Cantidad</p>
-        <div>
-            <button type="button" class="btn btn-primary">-</button>
-            1
-            <button type="button" class="btn btn-primary">+</button>
+        <div class="">
+            <button type="button" class="btn btn-primary " id="less">-</button>
+            <p id="cantidad" class="count">1</p>
+            <button type="button" class="btn btn-primary " id="more">+</button>
         </div>
         <br />
-        <button type="button" class="btn btn-primary">Añadir</button>
+        <button type="button" class="btn btn-primary">Agregar a carrito</button>
 
 
     </div>
@@ -63,10 +63,12 @@
             <div class="thumbnail">
                 <img src="https://diadejuegos.com/7547-large_default/la-tripulacion.jpg" alt="...">
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3>
+                        LA TRIPULACION
+                    </h3>
                     <div class="row">
                         <div class="col-md-8">
-                            <p>Lorem ipsum</p>
+                            <p>70</p>
                         </div>
                         <div class="col-md-4">
                             <span class="glyphicon glyphicon-share-alt"></span>
@@ -74,18 +76,20 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
+                    <a href="https://localhost:44355/Home/ProductoDetalle/18" class="btn btn-primary btn-santamesa" role="button">Ver mas</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="..." alt="...">
+                <img src="https://diadejuegos.com/8029-large_default/fantasma-blitz.jpg" alt="...">
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3>
+                        FANTASMA BLITZ
+                    </h3>
                     <div class="row">
                         <div class="col-md-8">
-                            <p>Lorem ipsum</p>
+                            <p>70</p>
                         </div>
                         <div class="col-md-4">
                             <span class="glyphicon glyphicon-share-alt"></span>
@@ -93,29 +97,49 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
+                    <a href="https://localhost:44355/Home/ProductoDetalle/19" class="btn btn-primary btn-santamesa" role="button">Ver mas</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="..." alt="...">
+                <img src="https://diadejuegos.com/380-large_default/sushi-go.jpg" alt="...">
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
+                    <h3>SUSHI GO</h3>
                     <div class="row">
                         <div class="col-md-8">
-                            <p>Lorem ipsum</p>
+                            <p>
+                                60
+                            </p>
                         </div>
                         <div class="col-md-4">
                             <span class="glyphicon glyphicon-share-alt"></span>
                             <span class="glyphicon glyphicon-heart"></span>
                         </div>
                     </div>
-
-                    <a href="#" class="btn btn-primary btn-santamesa" role="button">Button</a>
+                    
+                    <a href="https://localhost:44355/Home/ProductoDetalle/20" class="btn btn-primary btn-santamesa" role="button">Ver mas</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    var less = document.getElementById("less");
+    var more = document.getElementById("more");
+    var cantidad = document.getElementById("cantidad");
+    var contador = parseInt(cantidad.textContent);
+    less.addEventListener("click", e => {
+        if (contador > 1) {
+            contador--;
+            cantidad.innerHTML = contador;
+        }
+    })
+    more.addEventListener("click", e => {
+        if (contador < 11) {
+            contador++
+            cantidad.innerHTML = contador;
+        }
+    })
+</script>

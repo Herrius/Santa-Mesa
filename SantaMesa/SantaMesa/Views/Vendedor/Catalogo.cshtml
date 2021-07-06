@@ -1,8 +1,9 @@
-﻿@{ 
+﻿@model IEnumerable<SantaMesa.Models.Productos>
+@{
     Layout = "LayoutVendedor.cshtml";
 }
 
-<div>
+<!--<div>
     <div class="text-center container">
         <h3>Catalogo</h3>
     </div>
@@ -10,48 +11,115 @@
         <input type="text" name="name" value="" placeholder="Buscar" class="form-control input-reset" />
     </div>
     <br />
-    <div class="panel panel-default">
-        <!-- Default panel contents -->
-       
-
-        <!-- Table -->
-        <table class="table table-hover"> 
-        <thead> 
-            <tr> 
-            <th>ID</th> 
-            <th>Nombre Producto</th> 
-            <th>Codigo del producto</th> 
-            <th>Categorias</th> 
-            <th class="text-center">Editar</th> 
-            <th class="text-center">Eliminar</th> 
-            </tr> 
-        </thead> 
-        <tbody>
-            <tr> 
-            <th scope="row">1</th> 
-                <td>Catan</td> 
-                <td>CATDEV95</td> 
-                <td>Familiar</td> 
-                <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td> 
-                <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td> 
-            </tr> 
-            <tr>
-                <th scope="row">2</th>
-                <td>Carcassonne</td>
-                <td>CARDEV98</td>
-                <td>Losetas</td>
-                <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td>
-                <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-            </tr> 
-            <tr>
-                <th scope="row">3</th>
-                <td>Fantasma Blizt</td>
-                <td>FANDEV05</td>
-                <td>Casual</td>
-                <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td>
-                <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-            </tr> 
-            </tbody> 
+    <div class="panel panel-default">-->
+<!-- Default panel contents -->
+<!-- Table -->
+<!--<table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre Producto</th>
+                    <th>Codigo del producto</th>
+                    <th>Categorias</th>
+                    <th class="text-center">Editar</th>
+                    <th class="text-center">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Catan</td>
+                    <td>CATDEV95</td>
+                    <td>Familiar</td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Carcassonne</td>
+                    <td>CARDEV98</td>
+                    <td>Losetas</td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Fantasma Blizt</td>
+                    <td>FANDEV05</td>
+                    <td>Casual</td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-success"><span class="glyphicon glyphicon-edit "></span></button></td>
+                    <td class="text-center tabla-vendedor"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                </tr>
+            </tbody>
         </table>
     </div>
-</div>
+</div>-->
+
+
+
+
+
+<h2>Catalogo</h2>
+
+<p>
+    <a href="https://localhost:44355/Vendedor/Create" class=" btn btn-primary">Crear un nuevo elemento</a>
+</p>
+<table class="table-responsive table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idioma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.edad_player)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="col-md-1">
+                @Html.DisplayFor(modelItem => item.nombre_producto)
+            </td>
+            <td class="col-md-1">
+                @Html.DisplayFor(modelItem => item.idioma)
+            </td>
+            <td class="col-md-1">
+                @Html.DisplayFor(modelItem => item.edad_player)
+            </td>
+            <td class="col-md-2">
+                @*@Html.DisplayFor(modelItem => item.descripcion)*@
+                @{
+                    string text = item.descripcion;
+                    text = text.Substring(0, 100);
+                    @text;  
+                }
+            </td>
+            <td class="col-md-2">
+                @Html.DisplayFor(modelItem => item.imagen)
+            </td>
+            <td class="col-md-1">
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td class="col-md-4">
+                <a href="https://localhost:44355/Vendedor/Edit/@(item.id_Producto)" class="btn btn-success">Editar</a>
+                <a href="https://localhost:44355/Vendedor/Details/@(item.id_Producto)" class="btn btn-info">Detalles</a>
+                <a href="https://localhost:44355/Vendedor/Delete/@(item.id_Producto)" class="btn btn-danger">Eliminar</a>
+                
+            </td>
+        </tr>
+    }
+
+</table>

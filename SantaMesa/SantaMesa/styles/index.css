@@ -83,3 +83,11 @@ chess_input{
 .chess_img{
     width:100%;
 }
+
+.count {
+    display: inline-block;
+}
+
+.text-white{
+   color:white !important;
+}
