@@ -199,26 +199,26 @@
         </div>
     </div>
     <div data-content id="security">
-        <p>Contraseña y seguridad</p>
 
         <form action="ChangePassword" method="post">
 
+            @Html.HiddenFor(model => model.id_Cliente)
             <div>
-                <label for="name">Clave antigua</label><br />
-                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+                <label for="clave">Contraseña antigua</label><br />
+                <input type="text" name="clave" value="" />
             </div>
             <div>
-                <label for="name">Clave nueva</label><br />
-                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+                <label for="newpass">Clave nueva</label><br />
+                <input type="text" name="newpass" value="" />
             </div>
             <div>
-                <label for="name">Repetir contraseña nueva</label><br />
-                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+                <label for="newpasscheck">Repetir contraseña nueva</label><br />
+                <input type="text" name="newpasscheck" value="" />
             </div>
             <div>
-                <label for="name">Clave</label><br />
-                <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.clave)" />
+                <input class="btn-success" type="submit" value="Cambiar contraseña" />
             </div>
+
         </form>
     </div>
 

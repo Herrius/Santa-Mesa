@@ -30,7 +30,7 @@ namespace SantaMesa.Controllers
         }
 
         [HttpPost]
-        public ActionResult ActualizarDatos([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes       )
+        public ActionResult ActualizarDatos([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes)
         {
             if (clientes != null)
             {
@@ -40,27 +40,33 @@ namespace SantaMesa.Controllers
                 return View("Cuenta",clientes);
             }
             else return HttpNotFound();
-            /*
-            Clientes clientes=new Clientes();
 
-            int id=5;
-            clientes.nombres= Request.Form["name"].ToString();
-            clientes.telefono= Request.Form["telefono"].ToString();
-            clientes.email = Request.Form["email"].ToString();
-            clientes.dni = Request.Form["dni"].ToString();
-            clientes.direccion = Request.Form["direccion"].ToString();
-            clientes.ciudad = Request.Form["ciudad"].ToString();
-            clientes.clave = db.Clientes.Find(id).clave;
-
-
-            if (ModelState.IsValid)
-            {
-                db.Entry(clientes).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View("Cuenta");*/
         }
+
+        [HttpPost]
+        public ActionResult ChangePassword([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientesR) {
+
+            Clientes clientes=db.Clientes.Find(clientesR.id_Cliente);
+            string clave = Request.Form["clave"].ToString();
+
+            string new1=Request.Form["newpass"].ToString();
+            string new2= Request.Form["newpasscheck"].ToString();
+
+            if (clientes.clave == clave && clientes != null) 
+            {
+                if (new1.Equals(new2))
+                {
+                    clientes.clave = Request.Form["newpass"].ToString();
+                    db.Entry(clientes).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return View("Cuenta", clientes);
+                }
+                else return HttpNotFound();
+
+            }
+            else return HttpNotFound();
+        }
+
 
         public ActionResult LoginValidador()
         {
