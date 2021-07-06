@@ -91,3 +91,6 @@ chess_input{
 .text-white{
    color:white !important;
 }
+.mt{
+    margin-top:2rem;
+}

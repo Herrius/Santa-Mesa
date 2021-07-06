@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="8f58d0e7a9944f849a10d1dcf86d422a" Name="Diagram1">
-        <EntityTypeShape EntityType="BD_SantaMesaModel.Administrador" Width="1.5" PointX="7.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SantaMesaModel.Administrador" Width="1.5" PointX="7.625" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="BD_SantaMesaModel.DetallePedidos" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="BD_SantaMesaModel.Pedidos" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="BD_SantaMesaModel.Productos" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />

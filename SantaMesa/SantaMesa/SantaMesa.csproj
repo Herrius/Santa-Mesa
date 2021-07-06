@@ -256,7 +256,6 @@
     <Content Include="Views\Home\Whislist.cshtml" />
     <Content Include="Views\Vendedor\LayoutVendedor.cshtml" />
     <Content Include="Views\Vendedor\Catalogo.cshtml" />
-    <Content Include="Views\Vendedor\Banner.cshtml" />
     <Content Include="Views\Vendedor\AgregarProducto.cshtml" />
     <Content Include="Views\Clientes\Cuenta.cshtml" />
   </ItemGroup>
