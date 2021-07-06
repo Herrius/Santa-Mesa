@@ -30,11 +30,12 @@ namespace SantaMesa.Controllers
         }
 
         [HttpPost]
-        public ActionResult ActualizarDatos([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes)
+        public ActionResult ActualizarDatos([Bind(Include = "id_Cliente,nombres,telefono,email,direccion,dni,ciudad,estado,clave")] Clientes clientes       )
         {
             if (clientes != null)
             {
-                clientes.clave = "password";
+
+                db.Entry(clientes).State = EntityState.Modified;
                 db.SaveChanges();
                 return View("Cuenta",clientes);
             }

@@ -76,33 +76,36 @@
             <form class="form-group" action="ActualizarDatos" method="post">
                 <div class="box">
                     <div class="sub_box">
+                        @Html.HiddenFor(model => model.id_Cliente)
                         <div>
                             <label for="name">Nombres</label><br />
-                            <input type="text" name="name" value="@Html.DisplayFor(model => model.nombres)" />
+                            @Html.EditorFor(model => model.nombres)
                         </div>
                         <div>
-                            <label for="name">Telefono</label><br />
-                            <input type="text" name="telefono" value="@Html.DisplayFor(model => model.telefono)" />
+                            <label for="telefono">Telefono</label><br />
+                            @Html.EditorFor(model => model.telefono)
                         </div>
                         <div>
-                            <label for="name">Email</label><br />
-                            <input type="text" name="email" value="@Html.DisplayFor(model => model.email)" />
+                            <label for="email">Email</label><br />
+                            @Html.EditorFor(model => model.email)
                         </div>
                     </div>
                     <div class="sub_box">
                         <div>
-                            <label for="name">Dirección</label><br />
-                            <input type="text" name="direccion" value="@Html.DisplayFor(model => model.direccion)" />
+                            <label for="text">Dirección</label><br />
+                            @Html.EditorFor(model => model.direccion)
                         </div>
                         <div>
-                            <label for="name">DNI</label><br />
-                            <input type="text" name="dni" value="@Html.DisplayFor(model => model.dni)" />
+                            <label for="dni">DNI</label><br />
+                            @Html.EditorFor(model => model.dni)
                         </div>
                         <div>
-                            <label for="name">Ciudad</label><br />
-                            <input type="text" name="ciudad" value="@Html.DisplayFor(model => model.ciudad)" />
+                            <label for="ciudad">Ciudad</label><br />
+                            @Html.EditorFor(model => model.ciudad)
                         </div>
                     </div>
+                    @Html.HiddenFor(model => model.clave)
+                    @Html.HiddenFor(model => model.estado)
                 </div>
                
                 <input type="submit" name="update" value="Actualizar"/>
@@ -197,7 +200,8 @@
     </div>
     <div data-content id="security">
         <p>Contraseña y seguridad</p>
-        <form action="/" method="post">
+
+        <form action="ChangePassword" method="post">
 
             <div>
                 <label for="name">Clave antigua</label><br />
